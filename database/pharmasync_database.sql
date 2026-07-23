@@ -25,4 +25,13 @@ CREATE TABLE IF NOT EXISTS medicines (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
+CREATE TABLE IF NOT EXISTS sales (
+    sale_id INT AUTO_INCREMENT PRIMARY KEY,
+    medicine_id INT NOT NULL,
+    quantity_sold INT NOT NULL,
+    total_amount DECIMAL(10,2) NOT NULL,
+    sale_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (medicine_id) REFERENCES medicines(medicine_id)
+);
+
 SHOW TABLES;
