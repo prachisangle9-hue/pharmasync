@@ -77,7 +77,7 @@ The Pharmacy Management System is a desktop application developed using Java and
 
 ## 📌 Project Status
 
-🚧 Under Development
+Completed & Ready for Use
 
 ---
 
